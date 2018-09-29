@@ -4,6 +4,13 @@
     color:white;
     font-size: 20px;
 }
+.signin a{
+    color: white;
+    text-decoration: none;
+}
+hr{
+    background-color: white;
+}
 
 .ptext{
 	position:absolute;
@@ -14,12 +21,17 @@
 	font-size: 20px;
 	letter-spacing: 8px;
     text-transform: uppercase;
+    
+}
+.ptext a{
+    text-decoration: none;
 }
 .ptext .border{
-	background-color: #111;
 	color: white;
-	padding: 20px;
+    padding: 20px;
+    
 	}
 .ptext .border.trans{
-	background-color: transparent;
+    background-color: transparent;
+    
 }
