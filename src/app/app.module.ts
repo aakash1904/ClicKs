@@ -25,7 +25,7 @@ import { JoinComponent } from './join/join.component';
       [
         { path: 'signin', component: SignInComponent },
         { path: 'join', component: JoinComponent },
-        { path: '', redirectTo: '/join', pathMatch: 'full' },
+        { path: '', redirectTo: '/join', pathMatch: 'full' }
 
       ]
 
