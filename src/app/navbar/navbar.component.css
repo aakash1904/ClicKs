@@ -1,5 +1,25 @@
 .signin{
-    margin-left:auto;
+    
+    margin-left: auto;
     color:white;
     font-size: 20px;
+}
+
+.ptext{
+	position:absolute;
+	top:350px;
+	width: 100%;
+	text-align: center;
+	/* color: #000; */
+	font-size: 20px;
+	letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.ptext .border{
+	background-color: #111;
+	color: white;
+	padding: 20px;
+	}
+.ptext .border.trans{
+	background-color: transparent;
 }
