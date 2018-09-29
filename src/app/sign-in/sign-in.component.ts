@@ -11,7 +11,7 @@ import { FormGroup, Validators, FormControl } from '@angular/forms';
 export class SignInComponent implements OnInit {
 
   form: FormGroup;
-  check: boolean = true;
+  check: boolean= true;
 
   listofUsers: User[] = [
       {email: 'differaakash@gmail.com', password: 'aakash'},
@@ -31,13 +31,12 @@ export class SignInComponent implements OnInit {
   onSignin() {
     this.listofUsers.forEach(item => {
       if (item.email === this.form.value.email && item.password === this.form.value.password ) {
-        return this.router.navigate(['/home']);
-      } else {
-         this.check = false;
-         return this.form.reset();
-      }
+          this.router.navigate(['/home']);
+          return this.check = true;
+         }
     });
-
+    this.form.reset();
+    return this.check = false;
 
   }
 
