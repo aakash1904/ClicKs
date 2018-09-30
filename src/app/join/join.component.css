@@ -1,26 +1,45 @@
-
 .ptext{
-	position:absolute;
-	top:350px;
-	width: 100%;
+	font-family: 'Ubuntu', sans-serif;
+	text-transform: uppercase;
+	color: white;
 	text-align: center;
-	font-size: 20px;
-	letter-spacing: 8px;
+	line-height: 32px;
+    letter-spacing: 6px;
+}
+
+.ptext h3{
+	margin-top:10%;
+	color: #f0f0f0;
+}
+
+.ptext h1 span{
+	/* color:rgb(238, 235, 70); */
+	color:orange;
+}
+
+.section-btn {
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 30px;
+    margin-top: 22px;
     text-transform: uppercase;
 }
-.ptext a{
-	text-decoration: none;
-}
-.ptext .border{
-	color: rgb(167, 164, 164);
-    padding: 20px;
-    
-	}
-.ptext .border:hover{
-	color:white;
-}	
-.ptext .border.trans{
-    background-color: transparent;
-    
+
+.btn {
+    display: inline-block;
+    text-align: center;
 }
 
+a {
+    transition: ease-in-out 0.3s;
+    text-decoration: none !important;
+}
+.btn:hover{
+    background: orange;
+    border-color: white;
+	color:white;
+}
