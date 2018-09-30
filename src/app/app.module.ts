@@ -10,6 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { JoinComponent } from './join/join.component';
 import { HomeComponent } from './home/home.component';
+import { PhotographerDetailComponent } from './photographer-detail/photographer-detail.component';
 
 
 
@@ -19,7 +20,8 @@ import { HomeComponent } from './home/home.component';
     NavbarComponent,
     SignInComponent,
     JoinComponent,
-    HomeComponent
+    HomeComponent,
+    PhotographerDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +32,7 @@ import { HomeComponent } from './home/home.component';
         { path: 'signin', component: SignInComponent },
         { path: 'join', component: JoinComponent },
         { path: 'home', component: HomeComponent },
+        { path: 'detail', component: PhotographerDetailComponent },
         { path: '', redirectTo: '/join', pathMatch: 'full' }
 
       ]

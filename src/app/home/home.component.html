@@ -2,15 +2,18 @@
 <div class="container">
 <div class='row'>
      
-    <label class='my'>Search By Location : </label> &nbsp;
-          <input type='text'
-            placeholder='Enter Location' [(ngModel)]='listFilter' name="search" />
+  <div class="input-group input-group-lg">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-lg"><i class="fa fa-search" aria-hidden="true"></i></span>
+    </div>
+   
+    <input type="text"   placeholder='Enter Location' [(ngModel)]='listFilter' name="search" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
 </div>
 
 <div class="card">
 <div class='table-responsive'>
-        <table class='table'>
-               <!-- *ngIf='products && products.length'> -->
+        <table class='table'
+               *ngIf='photographers && filteredPhotographers.length'>
           <thead>
             <tr>
               
@@ -24,7 +27,7 @@
              
               <td>
                 
-                  {{ photographer.name }}
+                <a routerLink="/detail"> {{ photographer.name }} </a>
                 
               </td>
               <td>{{ photographer.location }}</td>
