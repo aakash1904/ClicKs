@@ -1,1 +1,38 @@
-<h1 class="homecomp">To be coded on 30-09-2018</h1>
+<!-- <h1 class="homecomp">To be coded on 30-09-2018</h1> -->
+<div class="container">
+<div class='row'>
+     
+    <label class='my'>Search By Location : </label> &nbsp;
+          <input type='text'
+            placeholder='Enter Location' [(ngModel)]='listFilter' name="search" />
+</div>
+
+<div class="card">
+<div class='table-responsive'>
+        <table class='table'>
+               <!-- *ngIf='products && products.length'> -->
+          <thead>
+            <tr>
+              
+              <th>Name</th>
+              <th>Location</th>
+           
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor='let photographer of filteredPhotographers'>
+             
+              <td>
+                
+                  {{ photographer.name }}
+                
+              </td>
+              <td>{{ photographer.location }}</td>
+              
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>   
+</div> 

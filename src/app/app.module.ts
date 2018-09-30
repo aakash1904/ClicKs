@@ -12,6 +12,7 @@ import { JoinComponent } from './join/join.component';
 import { HomeComponent } from './home/home.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,7 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule,FormsModule,
     [ RouterModule.forRoot(
 
       [
