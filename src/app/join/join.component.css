@@ -1,26 +1,30 @@
-
-.ptext{
-	position:absolute;
-	top:350px;
-	width: 100%;
-	text-align: center;
-	font-size: 20px;
-	letter-spacing: 8px;
+.ptext {
+    position: relative;
+    top: 350px;
+    width: 500px;
+    /* color: #000; */
+    float: left;
+    margin-left: 5em;
+    margin-top: -6em;
+    font-size: 20px;
+    letter-spacing: 8px;
     text-transform: uppercase;
-    
 }
-.ptext a{
-	text-decoration: none;
+
+.ptext a {
+    text-decoration: none;
 }
-.ptext .border{
-	color: rgb(167, 164, 164);
+
+.ptext .join {
+    width: 50%;
+}
+
+.ptext .border {
+    border-radius: 4px;
+    color: white;
     padding: 20px;
-    
-	}
-.ptext .border:hover{
-	color:white;
-}	
-.ptext .border.trans{
+}
+
+.ptext .border.trans {
     background-color: transparent;
-    
 }

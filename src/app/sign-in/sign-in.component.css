@@ -1,4 +1,13 @@
-.sign{
-   
+.sign {
     margin-top: 10px;
+}
+
+.errormessage {
+    color: azure;
+}
+label{
+    color: azure;
+}
+.my{
+    color: azure !important;
 }
