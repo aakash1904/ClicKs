@@ -1,37 +1,29 @@
 .signin{
     
     margin-left: auto;
-    color:white;
+    padding-right: 4px;
+    
+    margin-right: 10px;
+    color:rgb(202, 197, 197);   
     font-size: 20px;
 }
 .signin a{
-    color: white;
+    color: rgb(202, 197, 197);
     text-decoration: none;
+
 }
-hr{
-    background-color: white;
+.signin a:hover{
+    color: white;
 }
 
-.ptext{
-	position:absolute;
-	top:350px;
-	width: 100%;
-	text-align: center;
-	/* color: #000; */
-	font-size: 20px;
-	letter-spacing: 8px;
-    text-transform: uppercase;
-    
+.home{
+    /* margin-left: 20px; */
+    color: rgb(202, 197, 197);
 }
-.ptext a{
-    text-decoration: none;
+.home:hover{
+    color: white;
 }
-.ptext .border{
-	color: white;
-    padding: 20px;
-    
-	}
-.ptext .border.trans{
-    background-color: transparent;
-    
+
+.fa span.i{
+    color: red;
 }
