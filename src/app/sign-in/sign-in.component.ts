@@ -1,3 +1,4 @@
+import { DataService } from './../services/data.service';
 import { User } from './../user.model';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -10,6 +11,7 @@ import { FormGroup, Validators, FormControl } from '@angular/forms';
 })
 export class SignInComponent implements OnInit {
 
+  signedin: boolean;
   form: FormGroup;
   check: boolean= true;
 
@@ -19,7 +21,7 @@ export class SignInComponent implements OnInit {
       {email: 'tarandeep@gmail.com', password: 'tarandeep'}
   ];
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private dataservice: DataService) { }
 
   ngOnInit() {
     this.form = new FormGroup({
@@ -32,7 +34,9 @@ export class SignInComponent implements OnInit {
     this.listofUsers.forEach(item => {
       if (item.email === this.form.value.email && item.password === this.form.value.password ) {
           this.router.navigate(['/home']);
-          return this.check = true;
+           this.check = true;
+           this.signedin = true;
+           return this.dataservice.updatedata.next(this.signedin)
          }
     });
     this.form.reset();

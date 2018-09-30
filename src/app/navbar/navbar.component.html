@@ -1,4 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark ">
     <a class="navbar-brand" routerLink="/join">Clicks</a>
-    <div class="signin "><a routerLink="/signin">Sign In</a></div>
+    <div class="signin " *ngIf="!signedin"><a routerLink="/signin">Sign In</a></div>
+    <div class="signin " *ngIf="signedin" (click)="onclick()"><a routerLink="/join">Sign Out</a></div>
 </nav>
