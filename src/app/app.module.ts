@@ -6,9 +6,10 @@ import {RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { JoinComponent } from './join/join.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -16,21 +17,24 @@ import { JoinComponent } from './join/join.component';
     AppComponent,
     NavbarComponent,
     SignInComponent,
-    JoinComponent
+    JoinComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,[ RouterModule.forRoot(
+    ReactiveFormsModule,
+    [ RouterModule.forRoot(
 
       [
         { path: 'signin', component: SignInComponent },
         { path: 'join', component: JoinComponent },
-        { path: '', redirectTo: '/join', pathMatch: 'full' },
+        { path: 'home', component: HomeComponent },
+        { path: '', redirectTo: '/join', pathMatch: 'full' }
 
       ]
 
     ) ]
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

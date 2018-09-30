@@ -1,31 +1,30 @@
-.signin a{
-    color: white;
-    text-decoration: none;
-}
-hr{
-    background-color: white;
+.ptext {
+    position: relative;
+    top: 350px;
+    width: 500px;
+    /* color: #000; */
+    float: left;
+    margin-left: 5em;
+    margin-top: -6em;
+    font-size: 20px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
 }
 
-.ptext{
-	position:absolute;
-	top:350px;
-	width: 100%;
-	text-align: center;
-	/* color: #000; */
-	font-size: 20px;
-	letter-spacing: 8px;
-    text-transform: uppercase;
-    
-}
-.ptext a{
+.ptext a {
     text-decoration: none;
 }
-.ptext .border{
-	color: white;
+
+.ptext .join {
+    width: 50%;
+}
+
+.ptext .border {
+    border-radius: 4px;
+    color: white;
     padding: 20px;
-    
-	}
-.ptext .border.trans{
+}
+
+.ptext .border.trans {
     background-color: transparent;
-    
 }
