@@ -9,13 +9,13 @@
     margin: 10px;
 }
 .errormessage {
-    color: azure;
+    color: rgb(92, 6, 6);
 }
 label{
     color: rgb(165, 8, 8);
 }
 .my{
-    color: azure !important;
+    color: rgb(74, 4, 100) !important;
 }
 
 .row{
