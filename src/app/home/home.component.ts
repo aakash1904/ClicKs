@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
     this._listFilter = value;
     this.filteredPhotographers = this.listFilter ? this.performFilter(this.listFilter) : this.photographers;
   }
-  filteredPhotographers: Photographer[];
+  filteredPhotographers: Photographer[]=[];
 
 
   photographers: Photographer[]=[

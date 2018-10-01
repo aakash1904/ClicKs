@@ -18,7 +18,7 @@ export class SignInComponent implements OnInit {
   listofUsers: User[] = [
       {email: 'differaakash@gmail.com', password: 'aakash'},
       {email: 'rahulnadar@rediffmail.com', password: 'rahul'},
-      {email: 'tarandeep@gmail.com', password: 'tarandeep'}
+      {email: 'taran@gmail.com', password: 'taran'}
   ];
 
   constructor(private router: Router, private dataservice: DataService) { }
