@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import {RouterModule} from '@angular/router';
 
 
@@ -25,6 +26,7 @@ import { PhotographerDetailComponent } from './photographer-detail/photographer-
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     ReactiveFormsModule,FormsModule,
     [ RouterModule.forRoot(
 
@@ -32,7 +34,12 @@ import { PhotographerDetailComponent } from './photographer-detail/photographer-
         { path: 'signin', component: SignInComponent },
         { path: 'join', component: JoinComponent },
         { path: 'home', component: HomeComponent },
-        { path: 'detail', component: PhotographerDetailComponent },
+        
+        {
+          path: 'photographer/:id',
+          component: PhotographerDetailComponent
+        },
+  
         { path: '', redirectTo: '/join', pathMatch: 'full' }
 
       ]

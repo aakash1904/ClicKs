@@ -2,3 +2,22 @@
     color: white;
     text-align: center;
 }
+.card-body{
+    text-align: center;
+    width:1000px;
+
+}
+.card-img-top{
+    width:200px;
+    height: 200px;
+    margin-left: 100px;
+
+}
+.detail{
+    
+    margin-left: 100px;
+ 
+}
+.container{
+    margin-top:15px;
+}

@@ -1,1 +1,27 @@
-<h1 class="homecomp">To be coded on 01-10-2018</h1>
+<div class="container">
+    <div class="card" *ngIf='photographer'>
+    <h5 class="card-header text-center">Photographer Details</h5>
+    <div class="card-body">
+            <div class="" style="width: 1000px;">
+                    <div class="row">
+                    <img class="card-img-top" src="/src/assets/images/photo-1475274226786-e636f48a5645.jpg" alt="Card image cap">
+                    <div class="detail">
+                            
+                            <div >
+                              <h5 class="card-title">
+                                    <a [routerLink]="['/photographer', photographer.id]">
+                                        {{ photographer?.name }}
+                                      </a>
+                                    </h5>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <a href="#" class="btn btn-primary">HIRE</a>
+                            </div>
+                          </div>
+                  </div>
+                </div>
+    </div>
+    <div class="card-footer text-muted text-center">
+            Expert in Wedding Shoots
+          </div>
+  </div>
+</div>
