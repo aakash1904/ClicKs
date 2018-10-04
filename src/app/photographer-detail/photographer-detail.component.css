@@ -128,6 +128,13 @@ figure:hover p.info {
     
 }
 
+.background{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),black), url("/assets/images/cam4.jpg");
+    min-height: 100%;
+    background-size: cover;   
+    background-repeat: no-repeat;
+    height: 100vh;
+}
 
 
 

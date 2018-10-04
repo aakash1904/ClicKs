@@ -12,6 +12,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { JoinComponent } from './join/join.component';
 import { HomeComponent } from './home/home.component';
 import { PhotographerDetailComponent } from './photographer-detail/photographer-detail.component';
+import { ThankyouComponent } from './thankyou/thankyou.component';
 
 
 
@@ -22,7 +23,8 @@ import { PhotographerDetailComponent } from './photographer-detail/photographer-
     SignInComponent,
     JoinComponent,
     HomeComponent,
-    PhotographerDetailComponent
+    PhotographerDetailComponent,
+    ThankyouComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +41,7 @@ import { PhotographerDetailComponent } from './photographer-detail/photographer-
           path: 'photographer/:id',
           component: PhotographerDetailComponent
         },
+        { path: 'thankyou', component: ThankyouComponent },
   
         { path: '', redirectTo: '/join', pathMatch: 'full' }
 
