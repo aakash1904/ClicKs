@@ -19,11 +19,6 @@ export class NavbarComponent implements OnInit {
   onclick() {
     this.signedin = false;
     this.dataservice.updatedata.next(this.signedin);
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 50d7d96ba3e4b8f799584a286df4845f41114f02
   }
 
 }
