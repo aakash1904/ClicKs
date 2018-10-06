@@ -1,11 +1,16 @@
+<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 import * as firebase from 'firebase';
+=======
+import { Component } from '@angular/core';
+>>>>>>> 50d7d96ba3e4b8f799584a286df4845f41114f02
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+<<<<<<< HEAD
 export class AppComponent implements OnInit {
   title = 'Clicks';
 
@@ -17,4 +22,8 @@ export class AppComponent implements OnInit {
     })
 
   }
+=======
+export class AppComponent {
+  title = 'Clicks';
+>>>>>>> 50d7d96ba3e4b8f799584a286df4845f41114f02
 }

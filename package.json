@@ -22,7 +22,10 @@
     "@angular/router": "^6.1.0",
     "bootstrap": "^4.1.3",
     "core-js": "^2.5.4",
+<<<<<<< HEAD
     "firebase": "^5.5.3",
+=======
+>>>>>>> 50d7d96ba3e4b8f799584a286df4845f41114f02
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "ngx-bootstrap": "^3.0.1",

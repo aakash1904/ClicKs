@@ -13,7 +13,10 @@ import { JoinComponent } from './join/join.component';
 import { HomeComponent } from './home/home.component';
 import { PhotographerDetailComponent } from './photographer-detail/photographer-detail.component';
 import { ThankyouComponent } from './thankyou/thankyou.component';
+<<<<<<< HEAD
 import { SignupComponent } from './signup/signup.component';
+=======
+>>>>>>> 50d7d96ba3e4b8f799584a286df4845f41114f02
 
 
 
@@ -25,8 +28,12 @@ import { SignupComponent } from './signup/signup.component';
     JoinComponent,
     HomeComponent,
     PhotographerDetailComponent,
+<<<<<<< HEAD
     ThankyouComponent,
     SignupComponent
+=======
+    ThankyouComponent
+>>>>>>> 50d7d96ba3e4b8f799584a286df4845f41114f02
   ],
   imports: [
     BrowserModule,
@@ -36,16 +43,26 @@ import { SignupComponent } from './signup/signup.component';
 
       [
         { path: 'signin', component: SignInComponent },
+<<<<<<< HEAD
         { path: 'signup', component: SignupComponent },
         { path: 'join', component: JoinComponent },
         { path: 'home', component: HomeComponent },
 
+=======
+        { path: 'join', component: JoinComponent },
+        { path: 'home', component: HomeComponent },
+        
+>>>>>>> 50d7d96ba3e4b8f799584a286df4845f41114f02
         {
           path: 'photographer/:id',
           component: PhotographerDetailComponent
         },
         { path: 'thankyou', component: ThankyouComponent },
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 50d7d96ba3e4b8f799584a286df4845f41114f02
         { path: '', redirectTo: '/join', pathMatch: 'full' }
 
       ]
