@@ -13,8 +13,9 @@ import { JoinComponent } from './join/join.component';
 import { HomeComponent } from './home/home.component';
 import { PhotographerDetailComponent } from './photographer-detail/photographer-detail.component';
 import { ThankyouComponent } from './thankyou/thankyou.component';
-
-
+import { SignupComponent } from './signup/signup.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material';
 
 @NgModule({
   declarations: [
@@ -24,25 +25,27 @@ import { ThankyouComponent } from './thankyou/thankyou.component';
     JoinComponent,
     HomeComponent,
     PhotographerDetailComponent,
-    ThankyouComponent
+    ThankyouComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule,
     ReactiveFormsModule,FormsModule,
     [ RouterModule.forRoot(
 
       [
         { path: 'signin', component: SignInComponent },
+        { path: 'signup', component: SignupComponent },
         { path: 'join', component: JoinComponent },
         { path: 'home', component: HomeComponent },
-        
         {
           path: 'photographer/:id',
           component: PhotographerDetailComponent
         },
         { path: 'thankyou', component: ThankyouComponent },
-  
         { path: '', redirectTo: '/join', pathMatch: 'full' }
 
       ]

@@ -7,5 +7,10 @@ import { Subject } from 'rxjs';
 export class DataService {
 
   constructor() { }
+<<<<<<< HEAD
   updatedata = new Subject()
+=======
+  updatedata = new Subject();
+  checkdata = new Subject();
+>>>>>>> rahul
 }

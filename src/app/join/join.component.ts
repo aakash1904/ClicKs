@@ -1,4 +1,6 @@
+import { AuthService } from './../auth.service';
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-join',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JoinComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authservice: AuthService) { }
 
   ngOnInit() {
+  }
+
+  onSignup(form: NgForm){
+    const email = form.value.email;
+    const password = form.value.password;
+    this.authservice.signUpuser(email,password);
   }
 
 }
