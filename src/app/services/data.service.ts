@@ -5,12 +5,9 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
+  // checkdata: any;
 
   constructor() { }
-<<<<<<< HEAD
-  updatedata = new Subject()
-=======
   updatedata = new Subject();
   checkdata = new Subject();
->>>>>>> rahul
 }
