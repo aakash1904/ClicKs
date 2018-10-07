@@ -14,8 +14,8 @@ import { HomeComponent } from './home/home.component';
 import { PhotographerDetailComponent } from './photographer-detail/photographer-detail.component';
 import { ThankyouComponent } from './thankyou/thankyou.component';
 import { SignupComponent } from './signup/signup.component';
-
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material';
 
 @NgModule({
   declarations: [
@@ -31,6 +31,8 @@ import { SignupComponent } from './signup/signup.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule,
     ReactiveFormsModule,FormsModule,
     [ RouterModule.forRoot(
 
@@ -39,7 +41,6 @@ import { SignupComponent } from './signup/signup.component';
         { path: 'signup', component: SignupComponent },
         { path: 'join', component: JoinComponent },
         { path: 'home', component: HomeComponent },
-
         {
           path: 'photographer/:id',
           component: PhotographerDetailComponent
