@@ -41,7 +41,6 @@ import { MaterialModule } from './material';
         { path: 'signup', component: SignupComponent },
         { path: 'join', component: JoinComponent },
         { path: 'home', component: HomeComponent },
-
         {
           path: 'photographer/:id',
           component: PhotographerDetailComponent
