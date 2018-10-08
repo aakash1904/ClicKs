@@ -1,16 +1,8 @@
-.homecomp {
-    color: white;
-    text-align: center;
-}
-.my{
-    color:white;
-   margin-left: 450px;
-}
 .card{
     margin-top:30px;
 }
 table{
-    width: 1468px;
+    width: 1656.250px;
     text-align: center;
 }
 .input-group-lg{
@@ -24,7 +16,6 @@ table{
 .container{
     border: 0 !important;
     border-radius:0 !important;
-
     background-image:linear-gradient(rgba(0, 0, 0, 0.5),black), url("/assets/images/gull.jpg");
     min-height: 100%;
     background-size: cover;   
@@ -32,4 +23,12 @@ table{
     background-repeat: no-repeat;
     height: 100vh;
     
+}
+
+tr:nth-child(even){
+    background-color: #f1f1f1;
+}
+th{
+    background-color: black;
+    color: rgb(190, 190, 190);
 }
