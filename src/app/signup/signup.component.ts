@@ -15,13 +15,7 @@ export class SignupComponent implements OnInit {
 
   ngOnInit() {
   }
-  email = new FormControl('', [Validators.required, Validators.email]);
-
-  getErrorMessage() {
-    return this.email.hasError('required') ? 'You must enter a value' :
-        this.email.hasError('email') ? 'Not a valid email' :
-            '';
-  }
+ 
   onSignup(form: NgForm) {
     const email = form.value.email;
     const password = form.value.password;
