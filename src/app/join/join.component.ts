@@ -14,10 +14,10 @@ export class JoinComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSignup(form: NgForm){
+  onSignup(form: NgForm) {
     const email = form.value.email;
     const password = form.value.password;
-    this.authservice.signUpuser(email,password);
+    this.authservice.signUpuser(email, password);
   }
 
 }

@@ -7,7 +7,7 @@ import { DataService } from '../services/data.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  signedin: boolean = false;
+  signedin = false;
   constructor(private dataservice: DataService) { }
 
   ngOnInit() {
