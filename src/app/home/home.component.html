@@ -11,7 +11,7 @@
 </div>
 
 <div class="card">
-<div class='table-responsive'>
+  <div class='table-responsive'>
         <table class='table'
                *ngIf='photographers && filteredPhotographers?.length'>
           <thead>
@@ -27,10 +27,10 @@
              
               <td>
                 
-                <a routerLink="/detail"> {{ photographer.name }} </a>
+                  <a [routerLink]="['/photographer', photographer.id]"> {{ photographer?.name }} </a>
                 
               </td>
-              <td>{{ photographer.location }}</td>
+              <td>{{ photographer?.location }}</td>
               
 
             </tr>
