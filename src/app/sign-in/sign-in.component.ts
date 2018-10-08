@@ -14,7 +14,7 @@ export class SignInComponent implements OnInit {
 
   signedin: boolean;
   form: FormGroup;
-  check: boolean = true;
+  check = true;
 
   // listofUsers: User[] = [
   //     {email: 'differaakash@gmail.com', password: 'aakash'},
@@ -31,8 +31,8 @@ export class SignInComponent implements OnInit {
     });
 
     this.dataservice.checkdata.subscribe(
-      (response : boolean) => this.check = response
-    )
+      (response: boolean) => this.check = response
+    );
   }
 
   onSignin() {
