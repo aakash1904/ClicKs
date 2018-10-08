@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
     this.photographerService.getPhotographers().subscribe(
       photographers => {
         this.photographers = photographers;
-        this.filteredPhotographers;
+        this.filteredPhotographers=this.photographers;
       },
      
     );
